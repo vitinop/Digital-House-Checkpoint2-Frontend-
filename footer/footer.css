@@ -7,6 +7,10 @@
     border: 0
 }
 
+
+
+
+
 footer{
     display: block;
     background-color: rgb(24, 24, 26);
@@ -15,13 +19,6 @@ footer{
 
 
 
-
-
-/* .footerContainer{
-    display: flex;
-    flex-direction: column;
-   
-} */
 
 .teamSection{
     display: flex;
@@ -66,12 +63,12 @@ footer{
 
 
 
-.copyrightSection p{
+.copyrightSection{
     color: rgba(255, 255, 255, 0.35);
     text-align: center;
     font-style: italic;
     margin-top: 1.5em;
-    margin-bottom: 2em;
+    height: 7vh;
 } 
 
 
