@@ -8,7 +8,8 @@
 }
 
 footer{
-    margin: 0 auto;
+    display: block;
+    
     background-color: rgb(24, 24, 26);
     
 }
@@ -32,8 +33,12 @@ footer{
 
 }
 
-.teamSection h6{
+.teamSection p{
     color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: bold;
+    margin-top: 5px;
 }
 
 .aluno{
@@ -51,9 +56,10 @@ footer{
 }
 
 .copyrightSection{
-    color: white;
+    color: rgba(255, 255, 255, 0.35);
     text-align: center;
     margin: 10px;
+    font-style: italic;
 } 
 
 
