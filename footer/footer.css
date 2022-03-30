@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0
+}
+
+footer{
+    margin: 0 auto;
+    background-color: rgb(24, 24, 26);
+    
+}
+
+
+
+
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.teamSection{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+
+}
+
+.teamSection h6{
+    color: white;
+}
+
+.aluno{
+    display:flex;
+    margin: 10px;
+    flex-direction: row;
+}
+
+.social{
+    display: flex;
+    color: white;
+    margin-left: 8px;
+    gap: 10px;
+    
+}
+
+.copyrightSection{
+    color: white;
+    text-align: center;
+    margin: 10px;
+} 
+
+
+/*
+desktop: 1200px; 
+notebook: 992px;
+tablet: 768px;
+celular: 480px; 
+colocar 100 vh no body
+ */
