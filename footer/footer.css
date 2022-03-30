@@ -9,7 +9,6 @@
 
 footer{
     display: block;
-    
     background-color: rgb(24, 24, 26);
     
 }
@@ -36,7 +35,7 @@ footer{
 .teamSection p{
     color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-style: bold;
     margin-top: 5px;
 }
@@ -60,19 +59,22 @@ footer{
 }
 
 .aluno a:hover{
-    color: blue;
+    color: rgb(122, 122, 221);
     transform: scale(1.4);
     transition: 0.5s;
 }
 
 
 
-.copyrightSection{
+.copyrightSection p{
     color: rgba(255, 255, 255, 0.35);
     text-align: center;
     font-style: italic;
-    margin-top: 30px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 } 
+
+
 
 
 /*
