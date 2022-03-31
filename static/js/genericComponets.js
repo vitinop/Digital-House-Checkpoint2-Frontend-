@@ -1,8 +1,54 @@
 const nav = document.querySelector('#defaultHeader');
 nav.innerHTML = 
-    `<nav>
-    
-  </nav>`;
+` 
+    <nav class="navbar navbar-expand-md navbar-light"
+    style="background-color:#f4f4f4; box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 20px -20px;">
+
+
+    <!-- Icone do Site / redirecionador para mainpage - via bootstrap -->
+    <a href="#" class="navbar-brand  h1 ">
+      <img class="d-inline-block align-items-center"
+        src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2147793639/settings_images/t93fIpiQtiqOtxIRovQA_logo_dh_01.png"
+        width="160px" alt="Logo marca DigitalHouse" />
+    </a>
+    <!-- ----------- -->
+
+
+    <!-- botão sanduiche do menu responsivo - via bootstrap -->
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler "
+      aria-controls="navbarNav" area-expended="false" aria-label="toggle-navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <!-- ----------- -->
+
+
+    <!-- Menu de itens -via bootstrap  -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="nav navbar-nav">
+        <li class="navItem active">
+          <a href="/" class="navLink">
+            Home
+          </a>
+        </li>
+        <li class="navItem  active">
+          <a href="" class="navLink">
+            Itens
+          </a>
+        </li>
+        <li class="navItem  active">
+          <a href="/aboutUs" class="navLink">
+            Sobre Nós
+          </a>
+        </li>
+        <li class="navItem active">
+          <a href="/login" class="navLink">
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  `;
 
 const foot = document.querySelector('#defaultFooter');
 foot.innerHTML = 
