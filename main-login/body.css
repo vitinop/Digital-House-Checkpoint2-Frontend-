@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+}
+
+main{
+    background-image: url(https://assets.b9.com.br/wp-content/uploads/2019/05/netflix-library.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* main::after{
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0 ,0 ,0.4);
+}
+ */
+
+.section{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.titulo {
+    color: red;
+    font-weight: 700;
+    font-size: 60px;
+    display: flex;
+    text-align: center;
+}
+
+.button, a {  
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px rgb(7, 95, 7); 
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+}
+
+
+.button:hover{
+    background-color: rgb(5, 56, 5);
+    color: white;
+}
