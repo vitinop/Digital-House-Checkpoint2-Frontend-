@@ -1,156 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/css/header.css">
-    <link rel="stylesheet" href="../static/css/footer.css">
-    <link rel="stylesheet" href="../static/css/movieView.css">
-    <link rel="shortcut icon" href="https://www.pngkey.com/png/full/79-790340_icon-next-red-png.png">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/css/header.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+    <link rel="shortcut icon" href="https://www.pngkey.com/png/full/79-790340_icon-next-red-png.png" />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/css/movieView.css" />
 
-    <title> Nome do Filme - DHFlix</title>
-
+    <title>Nome do Filme - DHFlix</title>
 </head>
-       
+
 <body>
-  
     <!-- import do header -->
     <div id="defaultHeader"></div>
     <!-- ----------- -->
-    
-        <section class="mainpage">
-            <div class="container">
-                <div class="img_back">
-                    <button
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                    >
-                        PLAY
-                    </button>
-                </div>
+
+    <section class="mainpage">
+        <div class="container">
+            <div class="img_back">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    PLAY
+                </button>
             </div>
-        </section>
+        </div>
+    </section>
 
     <section class="descricao">
         <div class="titulo">
             <h1>Homem Aranha Sem Volta Pra Casa</h1>
         </div>
 
+        <!-- -------------------- -->
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <section class="modal-dialog modal-content video">
+                <div class="titulo2"></div>
+                <div class="frame">
+                    <iframe width="850" height="850" src="https://www.youtube.com/embed/CyiiEJRZjSU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- -------------------- -->
+
         <div class="texto">
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo fugiat pariatur molestiae laboriosam quas
-                sequi voluptas exercitationem labore accusamus harum ut, rem reprehenderit facere laudantium inventore
-                alias quia minus nam. </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quo fugiat pariatur molestiae laboriosam quas sequi voluptas
+                exercitationem labore accusamus harum ut, rem reprehenderit
+                facere laudantium inventore alias quia minus nam.
+            </p>
         </div>
 
         <div class="casting">
             <div class="diretor">
                 <h2>Diretor</h2>
                 <p></p>
-
             </div>
 
-            <!-- -------------------- -->
-            <!-- Button trigger modal -->
-
-            <!-- Modal -->
-            <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-            >
-                <section class="modal-dialog modal-content video">
-                    <div class="titulo2"></div>
-                    <div class="frame">
-                        <iframe
-                            width="850"
-                            height="850"
-                            src="https://www.youtube.com/embed/CyiiEJRZjSU"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </section>
+            <div class="escritores">
+                <h2>Roteiristas</h2>
+                <p></p>
             </div>
-            <!-- -------------------- -->
-
-            <div class="texto">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quo fugiat pariatur molestiae laboriosam quas sequi voluptas
-                    exercitationem labore accusamus harum ut, rem reprehenderit
-                    facere laudantium inventore alias quia minus nam.
-                </p>
-            </div>
-
-            <div class="casting">
-                <div class="diretor">
-                    <h2>Diretor</h2>
-                    <p></p>
-                </div>
-
-                <div class="escritores">
-                    <h2>Roteiristas</h2>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- import do Footer -->
-        <div id="defaultFooter"></div>
-        <!-- ----------- -->
-
-        <!-- Script de funcionamento do Header-via bootstrap  -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
-        <!-- ----------- -->
-
-        <!-- Script de import do Header e Footer  -->
-        <script src="../static/js/genericComponets.js"></script>
-        <!-- ----------- -->
-    </body>
-</html>
-=======
         </div>
     </section>
-
-
-    <section class="video">
-        <div class="titulo2">
-            <h3>Trailer</h3>
-        </div>
-
-        <div class="frame">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CyiiEJRZjSU"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-    </section>
-
-
-
-
-
-
 
     <!-- import do Footer -->
     <div id="defaultFooter"></div>
     <!-- ----------- -->
-
 
     <!-- Script de funcionamento do Header-via bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -161,8 +91,6 @@
     <!-- Script de import do Header e Footer  -->
     <script src="../static/js/genericComponets.js"></script>
     <!-- ----------- -->
-
 </body>
 
 </html>
-
