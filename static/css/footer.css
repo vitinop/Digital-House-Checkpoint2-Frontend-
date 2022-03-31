@@ -8,6 +8,7 @@
     flex-direction: row;
     gap: 15px;
     flex-wrap: wrap;
+    padding-top: 1em;
     justify-content: space-between;
 
 }
@@ -17,7 +18,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-style: bold;
-    margin-top: 5px;
+    
 }
 
 .aluno {
@@ -52,5 +53,5 @@
     height: auto;
     min-height: 3.5em;
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 0.1em;
 }
