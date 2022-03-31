@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,20 +17,26 @@
     <title> Nome do Filme - DHFlix</title>
 
 </head>
-
+       
 <body>
+  
     <!-- import do header -->
     <div id="defaultHeader"></div>
     <!-- ----------- -->
-
-
-    <section class="mainpage">
-        <div class="container">
-            <div class="img_back">
-                <img src="" alt="">
+    
+        <section class="mainpage">
+            <div class="container">
+                <div class="img_back">
+                    <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        PLAY
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <section class="descricao">
         <div class="titulo">
@@ -48,12 +53,77 @@
             <div class="diretor">
                 <h2>Diretor</h2>
                 <p></p>
+
             </div>
 
-            <div class="escritores">
-                <h2>Roteiristas</h2>
-                <p></p>
+            <!-- -------------------- -->
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+            >
+                <section class="modal-dialog modal-content video">
+                    <div class="titulo2"></div>
+                    <div class="frame">
+                        <iframe
+                            width="850"
+                            height="850"
+                            src="https://www.youtube.com/embed/CyiiEJRZjSU"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </section>
             </div>
+            <!-- -------------------- -->
+
+            <div class="texto">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quo fugiat pariatur molestiae laboriosam quas sequi voluptas
+                    exercitationem labore accusamus harum ut, rem reprehenderit
+                    facere laudantium inventore alias quia minus nam.
+                </p>
+            </div>
+
+            <div class="casting">
+                <div class="diretor">
+                    <h2>Diretor</h2>
+                    <p></p>
+                </div>
+
+                <div class="escritores">
+                    <h2>Roteiristas</h2>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- import do Footer -->
+        <div id="defaultFooter"></div>
+        <!-- ----------- -->
+
+        <!-- Script de funcionamento do Header-via bootstrap  -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <!-- ----------- -->
+
+        <!-- Script de import do Header e Footer  -->
+        <script src="../static/js/genericComponets.js"></script>
+        <!-- ----------- -->
+    </body>
+</html>
+=======
         </div>
     </section>
 
@@ -95,3 +165,4 @@
 </body>
 
 </html>
+
