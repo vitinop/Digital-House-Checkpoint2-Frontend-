@@ -1,25 +1,23 @@
 /* Estilização do botão que leva ao modal */
 
-.modalButtonSection{
+.modalButtonSection {
     display: flex;
     justify-content: center;
-    
 }
 .modalButton {
     color: #f4f4f4;
     cursor: pointer;
     width: 100px;
-    height: 100px;   
+    height: 100px;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
 }
 
-.modalButton:hover { 
-    color: #ED184C;
+.modalButton:hover {
+    color: #ed184c;
     transform: scale(1.4);
-    transition: 0.5s;}
-
-
+    transition: 0.5s;
+}
 
 /* Estilização do botão fechar modal*/
 .close {
@@ -31,12 +29,11 @@
 
 .close:hover,
 .close:focus {
-    color: #ED184C;
+    color: #ed184c;
     text-decoration: none;
-    cursor: pointer;    
+    cursor: pointer;
     transition: 0.5s;
 }
-
 
 /* Estilização do modal aberto */
 
@@ -47,15 +44,15 @@
     padding-top: 70px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0, 0, 0); 
-    background-color: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modalContent {
-    position: relative;  
+    position: relative;
     margin: auto;
     padding: 0;
     max-width: 70vw;
@@ -65,39 +62,40 @@
     animation-duration: 0.4s;
 }
 
-
-
 /* Estilização do vídeo do modal */
-.movieTrailer{
+.movieTrailer {
     width: 100%;
     height: 650px;
 }
 
-
-
+@media (min-width: 0px) and (max-width: 425px) {
+    .movieTrailer {
+        width: 100%;
+        height: 425px;
+    }
+}
 
 /* Animação de transição do modal */
 @-webkit-keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
         top: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes animatetop {
     from {
         top: -300px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
         top: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
-
