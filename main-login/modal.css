@@ -1,77 +1,20 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
- height: 100vh;
-}
-
-.mainSection {
-    background-image: url(https://assets.b9.com.br/wp-content/uploads/2019/05/netflix-library.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-
-
-
-
-
-.section {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 80vh;
-}
-
-.titulo {
-    color: red;
-    font-weight: 700;
-    font-size: 60px;
-    display: flex;
-    text-align: center;
-}
-
-.button { 
-    
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: solid 1px rgb(7, 95, 7); 
-    width: 200px;
-    height: 40px;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    
-}
-
-
-.button:hover{
-    background-color: rgb(5, 56, 5);
-    color: white;
-}
-
-/* Aqui começa o modal  */
-
- /* #login-modal{
+ #login-modal{
+  
     position: fixed;
+
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .modal {
+    display:flex;
     background: #e6ecf0;
     padding: 10px 0px 20px 0;
     border-radius: 10px;
@@ -108,7 +51,7 @@ body {
     border-radius: 3px;
 } 
 
- .btn2 {
+ .btn-1 {
     padding: 12px 0;
     width: 85%;
     background: #5dca88;
@@ -118,4 +61,4 @@ body {
     margin: 10px auto;
     cursor: pointer;
     border-bottom: 5px solid green;
-} */
+}  
