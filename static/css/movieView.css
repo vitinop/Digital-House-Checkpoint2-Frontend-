@@ -23,27 +23,6 @@
 }
 
 
-/* Estilização do botão que leva ao modal */
-
-.modalButtonSection{
-    display: flex;
-    justify-content: center;
-    
-}
-.modalButton {
-    color: #f4f4f4;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;   
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-}
-
-.modalButton:hover { 
-    color: #ED184C;
-    transform: scale(1.4);
-    transition: 0.5s;}
-
 .movieTrailerContainer{
     width: 100%;
     height: 650px;
@@ -57,10 +36,5 @@
     align-items: center;
 }
 
-/* Estilização do vídeo do modal */
-.movieTrailer{
-    width: 100%;
-    height: 650px;
-}
 
 
