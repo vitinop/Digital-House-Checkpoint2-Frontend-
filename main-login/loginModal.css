@@ -26,7 +26,7 @@
 /* Modal Content */
 .modalContent {
   
-    background-color: rgba(0,0,0,0,0.7);
+   background-color: #f4f4f4;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -38,12 +38,13 @@
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
-    box-shadow: 6px 5px 5px red;
+    
 }
 
 .modalContent h2{
-    color: white;
+    color: black;
     width: 100%;
+    font-weight: 500;
     margin-top: 1em;
     text-align: center;
 }
@@ -75,7 +76,7 @@
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
     margin-right: 10px;
     font-size: 28px;
