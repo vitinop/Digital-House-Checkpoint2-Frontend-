@@ -4,14 +4,14 @@
     vertical-align: baseline;
     list-style: none;
     box-sizing: border-box;
-    border: 0
-  }
+    border: 0;
+}
 
 /* Estilização de Elemento Pai do body - background e overlay*/
 
-.mainContent{
+.mainContent {
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -22,19 +22,18 @@
     z-index: 0;
 }
 
-
-.movieTrailerContainer{
+.movieTrailerContainer {
     width: 100%;
     height: 650px;
 }
 
 /* Estilização das caixas de texto */
-.descriptionSection{ 
+.descriptionSection {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+
+    color: #fff;
+    text-align: center;
 }
-
-
-
