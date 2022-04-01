@@ -36,7 +36,7 @@ body {
     
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-    border: solid 1px rgb(7, 95, 7); 
+    border: solid 1px red; 
     width: 200px;
     height: 40px;
     font-weight: 600;
@@ -48,7 +48,7 @@ body {
 
 
 .button:hover{
-    background-color: rgb(5, 56, 5);
+    background-color: rgb(109, 45, 41);
     color: white;
 }
 
