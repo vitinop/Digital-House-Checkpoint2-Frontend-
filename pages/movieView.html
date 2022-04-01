@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../static/css/header.css" />
         <link rel="stylesheet" href="../static/css/footer.css" />
+        <link rel="stylesheet" href="../static/css/modalMovieView.css" />
         <link
             rel="shortcut icon"
             href="https://www.pngkey.com/png/full/79-790340_icon-next-red-png.png"
@@ -35,13 +36,12 @@
         <section class="mainpage">
             <div class="container">
                 <div class="img_back">
-                    <button
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                    >
-                        PLAY
-                    </button>
+                    <div>   <button type="submit" class="button" id="btn-01">Confira</button></div>
+
+                    <!--
+                    <p class="button"><a href="#" style="text-decoration: none; color: white;">Explorar</a></p> -->
+                    
+              
                 </div>
             </div>
         </section>
@@ -54,29 +54,25 @@
             <!-- -------------------- -->
             <!-- Button trigger modal -->
 
-            <!-- Modal -->
-            <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-            >
-                <section class="modal-dialog modal-content video">
-                    <div class="titulo2"></div>
-                    <div class="frame">
-                        <iframe
-                            width="850"
-                            height="850"
-                            src="https://www.youtube.com/embed/CyiiEJRZjSU"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
+                 <!-- The Modal -->
+                 <div id="myModal" class="modal">
+                    
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Modal Header</h2>
+                      </div>
+                      <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                      </div>
+                      <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                      </div>
                     </div>
-                </section>
-            </div>
+                  
+                  </div>
 
             <!-- -------------------- -->
 
@@ -117,5 +113,9 @@
         <!-- Script de import do Header e Footer  -->
         <script src="../static/js/genericComponets.js"></script>
         <!-- ----------- -->
+
+         <!-- Script de import do modal -->
+         <script src="../static/js/formModal.js"></script>
+         <!-- ----------- -->
     </body>
 </html>
