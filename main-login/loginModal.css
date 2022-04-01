@@ -81,7 +81,6 @@
     margin-right: 10px;
     font-size: 28px;
     font-weight: bold;
-    /* padding-right: 1em; */
 }
 
 .close:hover, .close:focus {
@@ -90,14 +89,6 @@
     cursor: pointer;
 }
 
-/* .modalHeader {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 16px 16px;
-    background-color: rgb(4, 213, 95);
-    color: white;
-    text-align: center;
-} */
 
 .modalBody {
     padding: 2px 16px;
