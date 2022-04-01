@@ -36,44 +36,35 @@
         <section class="mainpage">
             <div class="container">
                 <div class="img_back">
-                    <div>   <button type="submit" class="button" id="btn-01">Confira</button></div>
-
-                    <!--
-                    <p class="button"><a href="#" style="text-decoration: none; color: white;">Explorar</a></p> -->
-                    
-              
+                    <!-- Button trigger modal -->
+                    <span class="iconPlay"></span>
                 </div>
+            </div>
+            <div class="titulo">
+                <h1>Homem Aranha Sem Volta Pra Casa</h1>
             </div>
         </section>
 
         <section class="descricao">
-            <div class="titulo">
-                <h1>Homem Aranha Sem Volta Pra Casa</h1>
-            </div>
+            <div class="titulo"></div>
 
             <!-- -------------------- -->
-            <!-- Button trigger modal -->
 
-                 <!-- The Modal -->
-                 <div id="myModal" class="modal">
-                    
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2>Modal Header</h2>
-                      </div>
-                      <div class="modal-body">
-                        <p>Some text in the Modal Body</p>
-                        <p>Some other text...</p>
-                      </div>
-                      <div class="modal-footer">
-                        <h3>Modal Footer</h3>
-                      </div>
+            <!-- Modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="iconClose">&times;</span>
+                    <div class="frame">
+                        <iframe
+                            class="videoFrame"
+                            src="https://www.youtube.com/embed/CyiiEJRZjSU"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        ></iframe>
                     </div>
-                  
-                  </div>
-
+                </div>
+            </div>
             <!-- -------------------- -->
 
             <div class="texto">
@@ -114,8 +105,8 @@
         <script src="../static/js/genericComponets.js"></script>
         <!-- ----------- -->
 
-         <!-- Script de import do modal -->
-         <script src="../static/js/formModal.js"></script>
-         <!-- ----------- -->
+        <!-- Script de import do modal -->
+        <script src="../static/js/formModal.js"></script>
+        <!-- ----------- -->
     </body>
 </html>

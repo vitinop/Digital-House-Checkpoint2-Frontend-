@@ -5,50 +5,27 @@
     height: 500px;
 }
 
-.modal-dialog {
-    margin: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(13.5px);
-    -webkit-backdrop-filter: blur(13.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 100%;
-        margin: 0px 0px;
-    }
-}
-
-.img_back button {
-<<<<<<< Updated upstream
-    margin-top: 25%;
-    margin-left: 48%;
-=======
-    margin-top: 19%;
-    margin-left: 45%;
-}
-
 .iconPlay {
-    background-image: url(./../img/iconPlay.png);
+    background-image: url(./../img/clickPlay.png);
     background-size: 100% 100%;
 
+    display: inline-block;
     width: 100px;
     height: 100px;
+
+    margin-top: 15%;
+    margin-left: 48%;
 }
 
 .frame {
-    width: 50%;
-    height: 800px;
+    position: absolute;
+    width: 100%;
+    height: 650px;
 }
 
 .videoFrame {
     width: 100%;
-    height: 750px;
+    height: 650px;
 }
 
 /* CONSTRUÇÂO DO MODAL */
@@ -57,9 +34,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
+    padding-top: 70px; /* Location of the box */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -74,14 +49,16 @@
     padding: 0;
     border: 1px solid #888;
     width: 80%;
+    height: 78%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
+    animation-name: 'animatetop';
     animation-duration: 0.4s;
 }
 
 .iconClose {
+    position: absolute;
     color: white;
     float: right;
     font-size: 28px;
@@ -93,5 +70,4 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
->>>>>>> Stashed changes
 }
