@@ -23,7 +23,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modalContent {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -77,17 +77,17 @@
     cursor: pointer;
 }
 
-.modal-header {
+.modalHeader {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
-.modal-body {
+.modalBody {
     padding: 2px 16px;
 }
 
-.modal-footer {
+.modalFooter {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
