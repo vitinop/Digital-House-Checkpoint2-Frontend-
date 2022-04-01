@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="../static/css/header.css">
   <link rel="stylesheet" href="../static/css/footer.css">
   <link rel="stylesheet" href="login.css">
-  <!-- <link rel="stylesheet" href="modal.css"> -->
   <link rel="stylesheet" href="modal.css">
+  <!-- <link rel="stylesheet" href="modal.css"> -->
   <link rel="shortcut icon" href="https://www.pngkey.com/png/full/79-790340_icon-next-red-png.png">
   <!-- O uso do script no header é para o funcionamento do form-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,26 +47,27 @@
 
         <!--
         <p class="button"><a href="#" style="text-decoration: none; color: white;">Explorar</a></p> -->
-        <div id="login-modal">
-          <div class="modal">
-            <div class="top-form">
-    
-              <div class="close-modal">
-                &#10006;
-              </div>
+        <button id="myBtn">Open Modal</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Modal Header</h2>
             </div>
-    
-            <div class="login-form">
-              <h2>LOGIN</h2>
+            <div class="modal-body">
+              <p>Some text in the Modal Body</p>
+              <p>Some other text...</p>
             </div>
-    
-            <form action="">
-              <input type="email" class="form-contol" id="email" placeholder="email">
-              <input type="password" class="form-control" id="password" placeholder="password">
-              <button type="button" class="btn2">Login</button>
-            </form>
-    
+            <div class="modal-footer">
+              <h3>Modal Footer</h3>
+            </div>
           </div>
+        
+        </div>
+
           <!--modal-->
         </div>
         <!--login modal-->
@@ -103,7 +104,7 @@
   <!-- ----------- -->
 
   <!-- Script do modal e formulário -->
-  <script src="../static/js/form.js"></script>
+  <script src="../static/js/formModal.js"></script>
 
 </body>
 
