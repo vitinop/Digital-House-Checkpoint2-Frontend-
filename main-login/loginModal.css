@@ -1,4 +1,5 @@
 /* The Modal (background) */
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -24,17 +25,28 @@
 
 /* Modal Content */
 .modalContent {
-    position: relative;
-    background-color: #fefefe;
+  
+   background-color: #f4f4f4;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    border-radius: 25px;
+    width: 30vw;
+    height: 50vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    
+}
+
+.modalContent h2{
+    color: black;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 1em;
+    text-align: center;
 }
 
 /* Add Animation */
@@ -64,31 +76,94 @@
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
+    margin-right: 10px;
     font-size: 28px;
     font-weight: bold;
+    /* padding-right: 1em; */
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
+.close:hover, .close:focus {
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
 
-.modalHeader {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+/* .modalHeader {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 16px 16px;
+    background-color: rgb(4, 213, 95);
     color: white;
-}
+    text-align: center;
+} */
 
 .modalBody {
     padding: 2px 16px;
 }
 
-.modalFooter {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+.form-container{
+    width: 100%;
+    padding: 12px 12px;
 }
+
+.form-container input{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border: 1px solid rgb(129, 125, 125);
+    border-radius: 7px;
+}
+
+.form-container input:hover{
+    border: 1px solid red;
+    
+}
+
+.btn-02 {
+    position: relative;
+    background-color: red;
+    color: white;
+    margin-top: 35px;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;  
+}
+
+.btn-02:hover{
+    background-color: rgba(255, 0, 0, 0.638);
+}
+
+
+@media screen and (max-width: 750px) {
+    .modalContent {
+
+       
+        width: 50%;
+        height: 40vh;
+       
+    }
+
+
+    
+
+}
+
+@media screen and (max-width: 850px) {
+    .modalContent {
+
+       
+        width: 50%;
+        height: 35vh;
+       
+    }
+
+
+    
+
+}
+
