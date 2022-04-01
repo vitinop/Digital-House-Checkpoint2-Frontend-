@@ -14,18 +14,8 @@ body {
     background-size: 100% 100%;
 }
 
-/* main::after{
-    z-index: -1;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0 ,0 ,0.4);
-}
- */
 
-.section{
+.section {
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
@@ -42,8 +32,8 @@ body {
     text-align: center;
 }
 
-.button 
- {  
+.button { 
+    
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
     border: solid 1px rgb(7, 95, 7); 
@@ -53,7 +43,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    padding-top: 7px;
+    
 }
 
 
@@ -61,3 +51,67 @@ body {
     background-color: rgb(5, 56, 5);
     color: white;
 }
+
+/* Aqui começa o modal  */
+
+ /* #login-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+}
+
+.top-form {  
+    display: flex;
+    justify-content: flex end;
+}
+
+.top-form, .close-modal {
+    display:flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.login-form h2{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-control, form input{
+    width: 85%;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+} 
+
+ .btn2 {
+    padding: 12px 0;
+    width: 85%;
+    background: #5dca88;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+    border-bottom: 5px solid green;
+} */
