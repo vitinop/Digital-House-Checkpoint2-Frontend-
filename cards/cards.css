@@ -14,8 +14,8 @@
   /* configurações do card filho */
   .card {
     font-family: 'Heebo'; 
-    height: 20em;
-    width: 15em;
+    height: 15em;
+    width: 10em;
     font-size: 1.5em;
     color: white;
     border-radius: 1em;
@@ -51,7 +51,7 @@
     font-weight: 600;
     display: none;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.2em;
   }
   
