@@ -4,37 +4,92 @@
     vertical-align: baseline;
     list-style: none;
     box-sizing: border-box;
-    border: 0
-  }
+    border: 0;
+}
 
 /* Estilização de Elemento Pai do body - background e overlay*/
 
-.mainContent{
+.mainContent {
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     z-index: -1;
 }
 
 .overlayBackgroud {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(280deg, rgba(13,17,23,0.5) 0%, rgba(13,17,23,0.6) 70%, rgba(13,17,23,0.9) 100%);
     z-index: 0;
 }
 
-
-.movieTrailerContainer{
+.movieTrailerContainer {
     width: 100%;
     height: 650px;
 }
 
 /* Estilização das caixas de texto */
-.descriptionSection{ 
+.descriptionSection {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    color: #fff;
+    text-align:left;
+    
+}
+.movieTitleLogo img{
+    width: 100%;
+}
+.textSection{
+    /* atributos globais dessa classes - no fim da pagina o @media resposivo */
+    border-radius: 16px;
+    font-weight: 250;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.RelesaDateBox {
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.75);
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1em;
 }
 
 
 
+.movieCasting{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.escritores,.diretor{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* atributos Responsivos  */
+@media (min-width: 425px) {
+    .textSection{
+    max-width: 80%;
+    margin: 2em;
+    padding: 2rem;
+}
+}
+@media (min-width: 0px) and (max-width: 425px){
+    .textSection{
+        min-width: 50%;
+        min-height: 50%;
+       
+        margin: 0.5em;
+        padding: 1rem;
+    }
+}
