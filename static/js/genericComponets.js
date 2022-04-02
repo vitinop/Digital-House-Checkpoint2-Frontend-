@@ -31,8 +31,8 @@ nav.innerHTML =
           </a>
         </li>
         <li class="navItem  active">
-          <a href="" class="navLink">
-            Itens
+          <a href="#catalogo" class="navLink">
+            Catálogo
           </a>
         </li>
         <li class="navItem  active">
