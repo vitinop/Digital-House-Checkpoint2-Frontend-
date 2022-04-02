@@ -41,7 +41,7 @@ nav.innerHTML =
           </a>
         </li>
         <li class="navItem active">
-          <a href="/login" class="navLink">
+          <a href="login.html" class="navLink">
             Login
           </a>
         </li>
