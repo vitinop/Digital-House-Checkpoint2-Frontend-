@@ -2,7 +2,13 @@
 
 .modalButtonSection {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.modalButtonSection p{
+    color: #f4f4f4;
+    margin-bottom: 5em;
 }
 .modalButton {
     color: #f4f4f4;
@@ -11,6 +17,7 @@
     height: 100px;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
+    justify-content: center;
 }
 
 .modalButton:hover {
