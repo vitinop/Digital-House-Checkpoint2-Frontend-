@@ -1,3 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    border: 0;
+}
+html { 
+  scroll-behavior: smooth}
+  
+body {
+    height: 100vh;
+}
+
+:root {
+  --transition-time: 0.5s;
+}
+
+
+
+/* Configurações do card pai*/
+.cards-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+  }
+  
+  /* configurações do card filho */
+  .card {
+    height: 15em;
+    width: 10em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Animação do card */
+  .card:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+  }
+
+
+  /* Configuração do texto */
+  .textCard {  
+    padding: 1em;
+    text-align: left;
+    z-index: 10;
+  }
+  
+  .textCard h1 {
+    color: white;  
+    font-weight: 600;
+    display: none;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  
+
+  
+  /* Animações / transição de texto */
+  .overlayCard {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.250s ease-in-out;
+    z-index: 5;
+  }
+  
+   .card:hover h1 {
+    display: block;
+    text-align: center;
+    animation: 2s anim-lineUp ease-in-out;
+  } 
+  
+
+  
+  .card:hover .overlayCard {
+    background-color: rgba(0, 0, 0, 0.5);
+  
+  }
+  
+
+  /* Media */
+
+  @media screen and (max-width: 1285px) {
+    .cards-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+   
+    .cards-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .carousel-item{
+      height: 20vh;
+    }
+    .cards-wrapper {
+      padding: 4rem 2rem;
+    }
+  
+    .card {
+      max-width: calc(100vw - 4rem);
+    }
+}
+
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
 /*
 desktop: 1200px; 
 notebook: 992px;
