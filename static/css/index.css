@@ -11,6 +11,7 @@ html {
   
 body {
     height: 100vh;
+  
 }
 
 :root {
@@ -18,13 +19,20 @@ body {
 }
 
 
+/* Configuração do background */
+.dh-background{
+  background-attachment: scroll;
+  background-size: cover ;
+  background-color: rgb(2, 9, 33);
+}
+
 
 /* Configurações do card pai*/
 .cards-wrapper {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 4rem;
     padding: 4rem;
     margin: 0 auto;
@@ -101,7 +109,7 @@ body {
   }
   
 
-  /* Media */
+  /* Media dos cards*/
 
   @media screen and (max-width: 1285px) {
     .cards-wrapper {
