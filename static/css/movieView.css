@@ -15,6 +15,7 @@ body {
 .mainContent {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -24,6 +25,7 @@ body {
     background: linear-gradient(280deg, rgba(13,17,23,0.5) 0%, rgba(13,17,23,0.6) 70%, rgba(13,17,23,0.9) 100%);
     z-index: 0;
 }
+
 
 .movieTrailerContainer {
     width: 100%;
@@ -81,6 +83,10 @@ body {
 
 /* atributos Responsivos  */
 @media (min-width: 425px) {
+    .movieTitleLogo img{
+        height: 550px;
+    
+    }
     .textSection{
     max-width: 80%;
     margin: 2em;
@@ -88,6 +94,10 @@ body {
 }
 }
 @media (min-width: 0px) and (max-width: 425px){
+    .movieTitleLogo img{
+        height: 150px;
+    
+    }
     .textSection{
         min-width: 50%;
         min-height: 50%;
