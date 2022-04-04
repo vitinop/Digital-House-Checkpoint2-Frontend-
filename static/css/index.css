@@ -108,6 +108,22 @@ body {
   
   }
   /* Configurações de estilo do slider */
+  .button {
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px red;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.button:hover {
+  background-color: rgb(109, 45, 41);
+  color: white;
+}
+
 
   .carouselInner {
     position: relative;
@@ -126,6 +142,7 @@ body {
   @media screen and (min-width: 900px) {
     .carouselInner {
       width: 65vw;
+      
     }
     .cards-wrapper {
       grid-template-columns: 1fr 1fr 1fr 1fr;
