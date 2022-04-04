@@ -124,6 +124,26 @@ body {
   content: "";
 }
 
+.button {
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+
+.button:hover {
+  background-color: rgb(109, 45, 41);
+  color: white;
+}
+
+
 .list-transition{
   height: 5vh;
   width: 95vw;
