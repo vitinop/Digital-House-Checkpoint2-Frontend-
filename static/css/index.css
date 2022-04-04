@@ -1,16 +1,19 @@
 * {
-    padding: 0;
-    margin: 0;
-    vertical-align: baseline;
-    list-style: none;
-    box-sizing: border-box;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  box-sizing: border-box;
+  border: 0;
 }
-html { 
-  scroll-behavior: smooth}
-  
+
+html {
+  scroll-behavior: smooth
+}
+
 body {
-    height: 100vh;
+  height: 100vh;
+
 }
 
 :root {
@@ -18,115 +21,198 @@ body {
 }
 
 
+/* Configuração do background */
+.dh-background {
+  background-attachment: fixed;
+  background-color: rgb(2, 9, 33);
+}
+
 
 /* Configurações do card pai*/
 .cards-wrapper {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
-    padding: 4rem;
-    margin: 0 auto;
-    width: max-content;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+/* configurações do card filho */
+.card {
+  height: 15em;
+  width: 10em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+
+
+/* Animação do card */
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+/* Configuração do texto */
+.textCard {
+  padding: 1em;
+  text-align: left;
+  z-index: 10;
+}
+
+.textCard h1 {
+  color: white;
+  font-weight: 600;
+  display: none;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+
+
+/* Animações / transição de texto */
+.overlayCard {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.250s ease-in-out;
+  z-index: 5;
+}
+
+.card:hover h1 {
+  display: block;
+  text-align: center;
+  animation: 2s anim-lineUp ease-in-out;
+}
+
+
+
+.card:hover .overlayCard {
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* Configurações de estilo do slider */
+
+.carouselInner {
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 12px;
+}
+
+.carouselInner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.button {
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+
+.button:hover {
+  background-color: rgb(109, 45, 41);
+  color: white;
+}
+
+
+.list-transition{
+  height: 5vh;
+  width: 95vw;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: inline-flex;
+  margin-bottom: 20px;
+
+}
+
+.list-transition ul li{
+  display: inline;
+  list-style-type: none;
+}
+
+.list-transition li a{
+  text-decoration: none;
+  background-color: rgb(7, 7, 81);
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid rgb(1, 1, 67);
+  margin-left: 15px;
+  border-radius: 3px;
+  float: left;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.list-transition a:hover{
+
+  background-color: rgb(39, 39, 74);
+}
+
+/* Media dos cards*/
+
+@media screen and (min-width: 900px) {
+  .carouselInner {
+    width: 65vw;
   }
-  
-  /* configurações do card filho */
+
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carouselInner {
+    width: 100vw;
+  }
+
+  .carousel-item {
+    height: 23vh;
+  }
+
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+
   .card {
-    height: 15em;
-    width: 10em;
-    font-size: 1.5em;
-    color: white;
-    border-radius: 1em;
-    display: flex;
-    justify-content: flex-end;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 5em -1em black;
-    transition: all, var(--transition-time);
-    position: relative;
-    overflow: hidden;
-    border: 10px solid #ccc;
-    text-decoration: none;
+    max-width: calc(100vw - 4rem);
   }
-  
-
-  
-  /* Animação do card */
-  .card:hover{
-      transform: scale(1.1);
-      transition: 0.5s;
-  }
-
-
-  /* Configuração do texto */
-  .textCard {  
-    padding: 1em;
-    text-align: left;
-    z-index: 10;
-  }
-  
-  .textCard h1 {
-    color: white;  
-    font-weight: 600;
-    display: none;
-    margin: 0;
-    font-size: 1em;
-    line-height: 1.2em;
-  }
-  
-
-  
-  /* Animações / transição de texto */
-  .overlayCard {
-    position: absolute;
-    width: 100%;
-    height: 40%;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all 0.250s ease-in-out;
-    z-index: 5;
-  }
-  
-   .card:hover h1 {
-    display: block;
-    text-align: center;
-    animation: 2s anim-lineUp ease-in-out;
-  } 
-  
-
-  
-  .card:hover .overlayCard {
-    background-color: rgba(0, 0, 0, 0.5);
-  
-  }
-  
-
-  /* Media */
-
-  @media screen and (max-width: 1285px) {
-    .cards-wrapper {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media screen and (max-width: 900px) {
-   
-    .cards-wrapper {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media screen and (max-width: 500px) {
-    .carousel-item{
-      height: 20vh;
-    }
-    .cards-wrapper {
-      padding: 4rem 2rem;
-    }
-  
-    .card {
-      max-width: calc(100vw - 4rem);
-    }
 }
 
 
@@ -151,6 +237,7 @@ body {
   }
 
 }
+
 /*
 desktop: 1200px; 
 notebook: 992px;
