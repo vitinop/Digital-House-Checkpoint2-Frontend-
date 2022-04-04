@@ -107,13 +107,28 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
   
   }
-  
+  /* Configurações de estilo do slider */
 
+  .carouselInner {
+    position: relative;
+    overflow: hidden;
+    
+    border-radius: 12px;
+}
+.carouselInner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+ 
   /* Media dos cards*/
 
-  @media screen and (max-width: 1285px) {
+  @media screen and (min-width: 900px) {
+    .carouselInner {
+      width: 65vw;
+    }
     .cards-wrapper {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
   
@@ -125,8 +140,11 @@ body {
   }
   
   @media screen and (max-width: 500px) {
+    .carouselInner {
+      width: 100vw;
+    }
     .carousel-item{
-      height: 25vh;
+      height: 23vh;
     }
     .cards-wrapper {
       padding: 4rem 2rem;
