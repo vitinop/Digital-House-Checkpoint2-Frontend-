@@ -26,7 +26,7 @@ nav.innerHTML =
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="nav navbar-nav">
         <li class="navItem active">
-          <a href="/" class="navLink">
+          <a href="./" class="navLink">
             Home
           </a>
         </li>
@@ -36,12 +36,12 @@ nav.innerHTML =
           </a>
         </li>
         <li class="navItem  active">
-          <a href="/pages/sobre-nos.html" class="navLink">
+          <a href="./pages/sobre-nos.html" class="navLink">
             Sobre Nós
           </a>
         </li>
         <li class="navItem active">
-          <a href="/pages/login.html" class="navLink">
+          <a href="./pages/login.html" class="navLink">
             Login
           </a>
         </li>
