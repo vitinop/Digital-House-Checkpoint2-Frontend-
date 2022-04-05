@@ -71,7 +71,7 @@ foot.innerHTML =
         <a target="_blank" href="https://github.com/fehbr800" class="social">
             <i class="bi bi-github"></i>
         </a>
-        <a target="_blank" href="#" class="social">
+        <a target="_blank" href="https://www.linkedin.com/in/matheus-emanoel-995b23181" class="social">
             <i class="bi bi-linkedin"></i>
         </a>
     </div>
@@ -99,7 +99,7 @@ foot.innerHTML =
         <a target="_blank" href="https://github.com/JeffersonMendes32" class="social">
             <i class="bi bi-github"></i>
         </a>
-        <a target="_blank" href="#" class="social">
+        <a target="_blank" href="https://www.linkedin.com/in/jefferson-mendes-26393799/" class="social">
             <i class="bi bi-linkedin"></i>
         </a>
     </div>
