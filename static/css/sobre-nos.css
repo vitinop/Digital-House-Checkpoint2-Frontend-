@@ -22,69 +22,87 @@
 
 body {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .text h1 {
     font-weight: bolder;
 }
 
-.caixa1 h3 {
-    margin-top: 15px;
+
+.container-team {
+    display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
 }
 
-.caixa1 p {
-    margin-top: 10px;
-}
-
-.caixa2 h3 {
-    margin-top: 15px;
-}
-
-.caixa2 p {
-    margin-top: 10px;
-}
-
-.caixa1 {
-    display: flex;
-
-    justify-content: center;
-    gap: 10%;
-    height: 70vh;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right:40px
-}
-
-.caixa2 {
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right:40px;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-    text-align: center;
-
-    height: 70vh;
-}
-
-.caixinha1 {
-    background-color: rgb(230, 223, 214);
-    width: 150vw;
-    height: 80%;
-}
-
-.caixinha1 img {
-    object-fit:cover;
-    height: 60%;
-    width: 100%;
-}
+.card-container {
+    background-color: #f4f4f4;
+    border: 10px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 0 0 5em -1em black;
+    height: 20em;
    
-@media screen and (max-width: 480px){
-    
-    .caixa2 {
-        display: flex;
-        justify-content: column;
-    }
 }
+
+.card01 img{
+    height: 14em;
+    width: 12em;
+    display: flex;
+    justify-content: flex-end;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+
+   
+}
+
+
+.card01 h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card01 a{
+    color: black;
+    text-decoration: none;
+    padding: 2.5em;
+   
+}
+
+.card01 a:hover{
+    transform: scale(1,4);
+    transition: 0.5s;
+
+}
+
+@media screen and (min-width: 900px) {
+  
+    .container-team {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+  
+    .container-team {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+ 
+  
+    .container-team {
+      padding: 4rem 2rem;
+    }
+  
+    .card01 {
+      max-width: calc(100vw - 4rem);
+    }
+  }
