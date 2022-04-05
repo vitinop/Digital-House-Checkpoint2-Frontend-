@@ -1,1 +1,0 @@
-# Digital-House-Checkpoint2-Frontend-
