@@ -26,7 +26,7 @@ nav.innerHTML =
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="nav navbar-nav">
         <li class="navItem active">
-          <a href="/" class="navLink">
+          <a href="./" class="navLink">
             Home
           </a>
         </li>
