@@ -38,6 +38,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s;
+
     
 }
 
@@ -89,35 +90,45 @@
     cursor: pointer;
 }
 
-
-.modalBody {
-    padding: 2px 16px;
-}
-
-.form-container{
+.form-container {
     width: 100%;
     padding: 12px 12px;
+    
 }
 
-.form-container input{
-    display: flex;
+.custom-checkbox {
+    margin-top: 1vh;
+}
+
+.form-container .custom-checkbox input{
+    margin-left: 0.6vw;
+}
+
+.form-container .custom-checkbox span {
+    margin-left: 6vw;
+}
+
+.form-container .custom-checkbox a {
+    text-decoration: none;
+}
+
+.form-container .input1, .btn-02 {
+    border: #888 1px solid;
     width: 100%;
     margin-top: 10px;
     padding: 10px 10px;
-    border: 1px solid rgb(129, 125, 125);
     border-radius: 7px;
 }
 
-.form-container input:hover{
+
+.form-container input:hover {
     border: 1px solid red;
-    
 }
 
 .btn-02 {
     position: relative;
     background-color: red;
     color: white;
-    margin-top: 35px;
     padding: 10px 20px;
     width: 100%;
     border: none;
