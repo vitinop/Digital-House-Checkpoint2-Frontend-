@@ -76,7 +76,7 @@ body {
 }
 
 .caixinha1 img {
-    
+    object-fit:cover;
     height: 60%;
     width: 100%;
 }
