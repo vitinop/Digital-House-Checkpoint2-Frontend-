@@ -6,7 +6,7 @@ nav.innerHTML =
 
 
     <!-- Icone do Site / redirecionador para mainpage - via bootstrap -->
-    <a href="index.html" class="navbar-brand  h1 ">
+    <a href="/" class="navbar-brand  h1 ">
       <img class="d-inline-block align-items-center"
         src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2147793639/settings_images/t93fIpiQtiqOtxIRovQA_logo_dh_01.png"
         width="160px" alt="Logo marca DigitalHouse" />
@@ -26,7 +26,7 @@ nav.innerHTML =
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="nav navbar-nav">
         <li class="navItem active">
-          <a href="index.html" class="navLink">
+          <a href="/" class="navLink">
             Home
           </a>
         </li>
