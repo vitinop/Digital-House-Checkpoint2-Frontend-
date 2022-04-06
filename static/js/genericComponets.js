@@ -81,7 +81,7 @@ foot.innerHTML =
         <a target="_blank" href="https://github.com/Laguiosta" class="social">
             <i class="bi bi-github"></i>
         </a>
-        <a target="_blank" href="#" class="social">
+        <a target="_blank" href="https://www.linkedin.com/in/adriano-augusto-de-oliveira-43856619a/" class="social">
             <i class="bi bi-linkedin"></i></a>
     </div>
 
