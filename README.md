@@ -15,8 +15,8 @@ https://digital-house-checkpoint2-frontend.vercel.app/
 
             -Opcionalmente, o site deve ser feito com Bootstrap.
             -O site deve ter hover e transições.
-            -O site deve ter rolagem suave (scroll behavior - smooth).
-     
+            -O site deve ter rolagem suave (scroll behavior - smooth)
+  </div>
    
 
 Feito Com:
