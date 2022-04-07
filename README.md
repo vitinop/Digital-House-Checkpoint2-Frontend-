@@ -27,7 +27,7 @@ HTML5 CSS3 JAVASCRIPT BOOTSTRAP
 
 <!--  Social Midia -->
 <div align="start"> 
- :handshake: Integrantes
+<h2> :handshake: Integrantes</h2>
     <li><a target="_blank" href="https://github.com/Laguiosta">Adrioano A.</a></li> 
     <li><a target="_blank" href="https://github.com/JeffersonMendes32">Jefferson Mendes</a></li>
     <li><a target="_blank" href="https://github.com/LuandersonPontes/CTD">Luanderson P.</a></li>
