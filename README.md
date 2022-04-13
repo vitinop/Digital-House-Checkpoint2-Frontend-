@@ -21,7 +21,7 @@ https://digital-house-checkpoint2-frontend.vercel.app/
    
 
 Feito Com:
-HTML5 CSS3 JAVASCRIPT BOOTSTRAP
+HTML5, CSS3, JAVASCRIPT ,BOOTSTRAP 5.1.3
 
 
 
